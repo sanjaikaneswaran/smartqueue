@@ -1,12 +1,14 @@
 <?php
 $host = "localhost";
-$dbname = "smartqueue";
+$dbname = "smartqueue";  // ✅ fixed
 $username = "root";
-$password = "";  // leave empty for XAMPP default
+$password = "";
 
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die(json_encode(["error" => "Connection failed: " . $e->getMessage()]));
+$conn = new mysqli($host, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die(json_encode([
+        "status" => "error",
+        "message" => "Connection failed: " . $conn->connect_error
+    ]));
 }
