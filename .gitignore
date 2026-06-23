@@ -141,3 +141,7 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+
+echo ".DS_Store" >> .gitignore
+echo "**/.DS_Store" >> .gitignore
