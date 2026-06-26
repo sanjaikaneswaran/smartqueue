@@ -5,7 +5,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost/SmartQueue/smartqueue/backend/api/get_canteens.php')
+    fetch('http://localhost/smartqueue/backend/api/get_canteens.php')
       .then(res => res.json())
       .then(data => {
         if (data.status === 'success') {
