@@ -3,11 +3,11 @@
 
 import React, { useEffect, useState } from 'react';
 
-import Foodmenu from "./pages/Foodmenu";
+import Menu from "./pages/Menu";
 
 function App() {
 
-return <Foodmenu />;
+return <Menu />;
 
 }
 
