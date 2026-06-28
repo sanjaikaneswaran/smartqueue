@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./PickupTime.css";
+import { FaClock } from "react-icons/fa";
 
 function PickupTime() {
     const [selectedTime, setSelectedTime] = useState("");
@@ -35,7 +36,10 @@ function PickupTime() {
         <div className="pickup-page">
             <div className="pickup-card">
 
-                <h2>Select Pickup Time</h2>
+              <h2 className="pickup-title">
+    <FaClock className="clock-icon" />
+    Select Pickup Time
+</h2>  
 
                 <div className="time-grid">
                     {timeSlots.map((time) => (

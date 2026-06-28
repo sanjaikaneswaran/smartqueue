@@ -44,3 +44,15 @@
     color: white;
     border-color: #ff7043;
 }
+
+.pickup-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.clock-icon {
+    font-size: 28px;
+    color: #f66207; /* Purple color */
+}
