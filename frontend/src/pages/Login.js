@@ -39,7 +39,24 @@ function Login() {
         </div>
 
         <div className="auth-right-panel">
-          Right side content
+          <div className="login-form-box">
+            <h2>Sign In</h2>
+            <p className = "form-subtitle">Enter your details to continue </p>
+
+            <form>
+              <label>Email Address</label>
+              <input type="email" placeholder="Enter your email" />
+
+              <label>Password</label>
+              <input type="password" placeholder="Enter your password" />
+
+              <button type="submit" className="login-btn">Sign In</button>
+            </form>
+            
+            <p className="register-text">
+              Don't have an account? <span>Register</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
